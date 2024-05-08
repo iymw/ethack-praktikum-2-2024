@@ -1,0 +1,31 @@
+# Nmap 7.94SVN scan initiated Tue May  7 22:43:50 2024 as: nmap -sV -sC -oN nmaplog.log 10.15.42.36
+Nmap scan report for 10.15.42.36
+Host is up (0.018s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 2.0.8 or later
+| ftp-syst:
+|   STAT:
+| FTP server status:
+|      Connected to 10.33.2.189
+|      Logged in as ftp
+|      TYPE: ASCII
+|      Session bandwidth limit in byte/s is 6250000
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.5 - secure, fast, stable
+|_End of status
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey:
+|   3072 ca:12:a1:08:41:b8:5b:01:b2:2b:c6:64:9d:01:ce:e0 (RSA)
+|   256 df:e6:37:47:be:43:54:96:1f:40:43:9b:d7:ac:78:ad (ECDSA)
+|_  256 b5:74:86:8d:ee:74:51:2a:38:09:67:38:7d:a0:e6:c0 (ED25519)
+8888/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: Login Page
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May  7 22:44:03 2024 -- 1 IP address (1 host up) scanned in 13.10 seconds
